@@ -63,8 +63,7 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
-# Security patch level
-VENDOR_SECURITY_PATCH := 2021-06-01
+
 
 # Inherit the proprietary files
 include vendor/xiaomi/lavender/BoardConfigVendor.mk
