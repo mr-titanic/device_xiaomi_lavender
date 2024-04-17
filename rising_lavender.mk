@@ -9,7 +9,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common SuperiorOS stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/rising/config/rising.mk)
 
 # Inherit from lavender device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -25,12 +25,13 @@ TARGET_CORE_GMS := true
 TARGET_GAPPS_ARCH := arm64
 RISING_CHIPSET := SDM669
 TARGET_ENABLE_BLUR := true
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 
 
 
 
 
-PRODUCT_NAME := lineage_lavender
+PRODUCT_NAME := rising_lavender
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := lavender
 PRODUCT_MANUFACTURER := Xiaomi
